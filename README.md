@@ -36,7 +36,7 @@ Install using git clone
         git clone https://github.com/lulusidev/phyters/
 ```
 
-Is only this,lol
+Is only this,loll
 
 ## How Usage
 
