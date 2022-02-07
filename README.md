@@ -6,27 +6,27 @@
 
 - Src image
 
-![src](testimages/srcimage/neymarnevou.jpg)
+![src](https://github.com/Lulusidev/phyters/blob/main/testimages/srcimages/neymarnevou.jpg)
 
 - Grey Scale 
 
-![src](testimages/outimage/neymarnevou_GRAY.jpg)
+![src](https://github.com/Lulusidev/phyters/blob/main/testimages/outimg/neymarnevou_GRAY.jpg)
 
 - Selfia Filter 
 
-![src](testimages/outimage/neymarnevou_SELFIA.jpg)
+![src](https://github.com/Lulusidev/phyters/blob/main/testimages/outimg/neymarnevou_SELFIA.jpg)
 
 - Blur Filter 
 
-![src](testimages/outimage/neymarnevou_BLUR.jpg)
+![src](https://github.com/Lulusidev/phyters/blob/main/testimages/outimage/neymarnevou_BLUR.jpg)
 
 - Purple Filter
 
-![src](testimages/outimage/neymarnevou_PURPLE.jpg)
+![src](https://github.com/Lulusidev/phyters/blob/main/testimages/outimage/neymarnevou_PURPLE.jpg)
 
 - Negative Filter
 
-![src](testimages/outimage/neymarnevou_NEG.jpg)
+![src](https://github.com/Lulusidev/phyters/blob/main/testimages/outimage/neymarnevou_NEG.jpg)
 
 ## How Install
 
