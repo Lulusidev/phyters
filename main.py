@@ -7,8 +7,7 @@ def main():
         sys.exit(1)
     
     file = sys.argv[2]
-    filter_user = sys.argv[1]
-    
+    filter_user = sys.argv[1]    
     
     file_without_ext,ext = get_filename_and_ext(file)
     
