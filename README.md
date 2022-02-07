@@ -18,15 +18,15 @@
 
 - Blur Filter 
 
-![src](testimages/outimage/neymarnevou_BLUR.jpg)
+![src](https://github.com/Lulusidev/phyters/blob/main/testimages/outimage/neymarnevou_BLUR.jpg)
 
 - Purple Filter
 
-![src](testimages/outimage/neymarnevou_PURPLE.jpg)
+![src](https://github.com/Lulusidev/phyters/blob/main/testimages/outimage/neymarnevou_PURPLE.jpg)
 
 - Negative Filter
 
-![src](testimages/outimage/neymarnevou_NEG.jpg)
+![src](https://github.com/Lulusidev/phyters/blob/main/testimages/outimage/neymarnevou_NEG.jpg)
 
 ## How Install
 
