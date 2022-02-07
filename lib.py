@@ -1,7 +1,6 @@
 from PIL import Image
-import os
 
-def black_and_white(file):
+def to_gray(file:str)->Image:
 
     image = Image.open(file)
     
@@ -15,14 +14,15 @@ def black_and_white(file):
             
             pxl = image.getpixel((i,j))
             R,G,B = pxl[0],pxl[1],pxl[2]
-     #       avg = sum(pxl)//3
+            
             avg = (pxl[0]+pxl[1]+pxl[2])//3      
             gray_pixel = (avg,avg,avg)
+            
             image_gray.putpixel((i,j),gray_pixel)
     
     return image_gray
 
-def to_selfia(file):
+def to_selfia(file:str)->Image:
     image = Image.open(file)
     
     height = image.height
@@ -50,7 +50,7 @@ def to_selfia(file):
     
     return image_selfia
 
-def to_purple(file):
+def to_purple(file:str)->Image:
     image = Image.open(file)
     
     height = image.height
@@ -80,7 +80,7 @@ def to_purple(file):
 
 
 
-def to_negative(file):
+def to_negative(file:str)->Image:
     image = Image.open(file)
     
     height = image.height
@@ -104,7 +104,7 @@ def to_negative(file):
     
     return image_neg
 
-def to_blur(file):
+def to_blur(file:str)->Image:
     image = Image.open(file)
     
     height = image.height
@@ -139,13 +139,4 @@ def to_blur(file):
     
 
     return image_blur
-
-
-def get_filename_and_ext(filename):
-
-
-    base = os.path.basename(filename)
-    filename_without_ext,ext = os.path.splitext(base)
-
-    return filename_without_ext,ext
 
