@@ -24,6 +24,8 @@ def treat_filtername(filter_:str)->str:
     
     return filter_treat
 
+
+
 def helpmsg(returnvalue:int):
     print("""Usage:python main.py FILTER ARQUIVE [path]
     Filters: 
@@ -38,5 +40,34 @@ def helpmsg(returnvalue:int):
     usage ./ for save the image in current directory""")
     sys.exit(returnvalue)
     
+def get_RGB():
+    while True:
+        R = input("R:")
+        
+        try:
+            R = int(R,16)
+            break
+        except:
+            #print("Take a valid hexadecimal value")
+            continue
+    while True:
+        G = input("G:")
+        
+        try:
+            G = int(G,16)
+            break
+        except:
+            #print("Take a valid hexadecimal value")
+            continue
 
+    while True:
+        B = input("B:")
+        
+        try:
+            B = int(B,16)
+            break
+        except:
+            #print("Take a valid hexadecimal value")
+            continue
 
+    return R,G,B
