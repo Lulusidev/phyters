@@ -21,15 +21,10 @@ def main():
     
     #flagment file name in filename ext and path of file        
     file_without_ext,ext,path = get_filename_and_ext(file)
-
-    match ext :
-        case ".png":
-            image_type = "PNG"
-        case ".jpg" :
-            image_type = "JPEG"
-        case ".bmp":
-            image_type = "BMP"
     
+    #if ext == ".jpg" image_type = "JPEG" else image_type = ext[1:].upper()
+    image_type = "JPEG" if ext==".jpg" else ext[1:].upper()
+
     str_filter = treat_filtername(filter_user)
 
     if filter_user in ["-gray","--gray","gray"]:
@@ -39,7 +34,7 @@ def main():
         image = to_selfia(file)
  
     elif filter_user in ["-purple","--purple","purple"]:
-        image = to_purple(file)
+       image = to_purple(file)
     
     elif filter_user in ["-neg","--neg","neg"]:
         image = to_negative(file)
@@ -47,6 +42,16 @@ def main():
     elif filter_user in ["-blur","--blur","blur"]:
         image = to_blur(file)
     
+    elif filter_user in ["-spurple","--spurple","spurple"]:
+        image = to_selfia_purple(file)
+    
+    elif filter_user in ["-lut","--lut","lut"]:
+        R,G,B = get_RGB() 
+        image = to_lut_hexa(file,R,G,B)
+      
+    elif filter_user in ["-green","--green","green"]:
+        image = to_green(file) 
+
     else :
         print("ERROR : Filter not Found")
         helpmsg(3)
