@@ -31,10 +31,14 @@ def helpmsg(returnvalue:int):
     Filters: 
         - Gray scale : -gray or --gray or gray
         - Blur : -blur or --blur or blur
-        - Purple : -purple or --purple or purple
+        - Selfia Purple : -purple or --purple or purple
         - Selfia : -selfia or --selfia or selfia
-        - Negative : -neg or --neg or negative
-    
+        - Negative : -neg or --neg or negative        
+        - Green : -green or --green or green
+        - Purple : -purple or --purple or purple
+
+    Use the menu flag of open the filter selection menu :)
+
     example: python main.py --neg image.jpeg ./
 
     usage ./ for save the image in current directory""")
@@ -71,3 +75,19 @@ def get_RGB():
             continue
 
     return R,G,B
+
+def menu():
+
+    print("""Select a Filter:
+    - Gray scale : gray
+    - Blur : blur
+    - Selfia Purple : spurple
+    - Selfia : selfia
+    - Negative : negative
+    - Apply lut solid Color : lut
+    - Green : green
+    - Purple : purple
+    """)
+    select_filter = input("filter: ")
+
+    return select_filter

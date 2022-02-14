@@ -15,8 +15,8 @@ def main():
         sys.exit(1)
       
     #local vars with argvs cli
+    filter_user = sys.argv[1] 
     file = sys.argv[2]
-    filter_user = sys.argv[1]    
     path_file = sys.argv[3]
     
     #flagment file name in filename ext and path of file        
@@ -24,9 +24,13 @@ def main():
     
     #if ext == ".jpg" image_type = "JPEG" else image_type = ext[1:].upper()
     image_type = "JPEG" if ext==".jpg" else ext[1:].upper()
+    
+    #open menu
+    if sys.argv[1] == "menu":
+        filter_user = menu()
 
     str_filter = treat_filtername(filter_user)
-
+    
     if filter_user in ["-gray","--gray","gray"]:
         image = to_gray(file)
    
